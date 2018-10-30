@@ -1,0 +1,3 @@
+[submodule "loraserver-docker"]
+	path = loraserver-docker
+	url = https://github.com/brocaar/loraserver-docker.git
