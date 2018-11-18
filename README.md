@@ -1,7 +1,8 @@
 # loraserver-airquality
 
-git submodule add https://github.com/brocaar/loraserver-docker.git
 git submodule add git@github.com:ssuffian/Python-CayenneLPP.git
+
+Uses: https://github.com/brocaar/loraserver-docker
 
 # updated lora-server/configuration from Kangaroo.
 
