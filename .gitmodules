@@ -1,3 +1,6 @@
 [submodule "loraserver-docker"]
 	path = loraserver-docker
-	url = https://github.com/brocaar/loraserver-docker.git
+	url = git@github.com/ssuffian/loraserver-docker.git
+[submodule "Python-CayenneLPP"]
+	path = Python-CayenneLPP
+	url = git@github.com:ssuffian/Python-CayenneLPP.git
