@@ -1,0 +1,20 @@
+FROM python:3.6.4
+
+RUN set -ex && pip install pipenv --upgrade
+
+RUN apt-get update && apt-get install nodejs -yqq
+RUN npm install -g npm
+
+COPY Pipfile Pipfile
+COPY Pipfile.lock Pipfile.lock
+COPY Python-CayenneLPP /Python-CayenneLPP
+RUN set -ex && pipenv install --system --deploy --dev
+ENV PYTHONPATH=/usr/local/bin:/app
+ENV PYTHON_VERSION=3.6.4
+
+RUN set -ex && pip install jupyterlab
+WORKDIR /Python-CayenneLPP
+RUN set -ex && python setup.py develop
+
+WORKDIR /app
+

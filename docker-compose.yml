@@ -1,0 +1,18 @@
+version: '3'
+services:
+  shell:
+    build: .
+    image: lora_shell
+    stdin_open: true
+    tty: true
+    entrypoint: /bin/sh
+    volumes:
+      - .:/app
+
+  node:
+    image: lora_shell
+    entrypoint: node 
+    volumes:
+      - .:/app
+    depends_on:
+      - shell

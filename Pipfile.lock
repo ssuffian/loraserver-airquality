@@ -1,0 +1,31 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "0e3b18459789c9ceece45a26ffd0560b67772a7513a12c1f3a12d272f627f814"
+        },
+        "pipfile-spec": 6,
+        "requires": {},
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "paho-mqtt": {
+            "hashes": [
+                "sha256:e440a052b46d222e184be3be38676378722072fcd4dfd2c8f509fb861a7b0b79"
+            ],
+            "index": "pypi",
+            "version": "==1.4.0"
+        },
+        "python-cayennelpp": {
+            "editable": true,
+            "git": "https://github.com/ssuffian/Python-CayenneLPP.git",
+            "ref": "698c2db14a89d29c167a16025c039f8f90dc56d3"
+        }
+    },
+    "develop": {}
+}
