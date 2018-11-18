@@ -9,3 +9,7 @@ Uses: https://github.com/brocaar/loraserver-docker
     pipenv lock
     pipenv install
     pipenv run python mqtt.py
+
+#
+
+    node payload_decrypt.js
